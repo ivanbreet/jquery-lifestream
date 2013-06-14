@@ -2213,6 +2213,7 @@ $.fn.lifestream.feeds.twitter = function( config, callback ) {
 
     if( input && input.length > 0 ) {
       j = input.length;
+      if(j>5) j=5;
       for( ; i<j; i++ ) {
         status = input[i];
         output.push({
